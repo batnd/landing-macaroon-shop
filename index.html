@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контрольное задание 10</title>
+    <!-- Подключение less файла через javascript-->
+<!--     <link rel="stylesheet/less" type="text/css" href="src/less/style.less">-->
+<!--     <script src="https://cdn.jsdelivr.net/npm/less" ></script>-->
+
+    <!-- Подключение стилей через css файл, полученный из less -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check" viewBox="0 0 512 512">
+        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+    </symbol>
+</svg>
+
+<header class="header">
+    <div class="container header__container">
+        <div class="burger" id="burger">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40px" height="22px">
+                <path fill-rule="evenodd" fill="rgb(130, 19, 40)"
+                      d="M0.000,22.000 L0.000,20.000 L40.000,20.000 L40.000,22.000 L0.000,22.000 ZM0.000,10.000 L40.000,10.000 L40.000,12.000 L0.000,12.000 L0.000,10.000 ZM0.000,-0.000 L40.000,-0.000 L40.000,2.000 L0.000,2.000 L0.000,-0.000 Z"/>
+            </svg>
+        </div>
+        <div class="logo header__logo">
+            <a href="#">
+                <img src="images/header/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="header__menu menu" id="menu">
+
+            <div class="close">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
+            </div>
+
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a class="header__link" href="#">Пироженки</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__link" href="#">О нас</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__link" href="#">Оформить заказ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contact header__contact">+375 (29) 368-98-68</div>
+    </div>
+</header>
+
+<section class="intro">
+    <div class="container intro__container">
+        <div class="intro__animation">
+            <div class="intro__animation__circle"></div>
+            <div class="intro__animation__circle circle2"></div>
+        </div>
+        <div class="intro__text">
+            <h1 class="intro__title">Мягкие французские пироженки Macaroons</h1>
+            <p class="intro__description">
+                Побалуйте себя и своих близких самыми вкусными
+                и ароматными домашними пироженками Macaroon!
+            </p>
+            <div class="intro__action">
+                <button class="button intro__button">Выбрать макарун</button>
+            </div>
+        </div>
+        <div class="intro__image">
+            <img src="images/intro/macaroons.png" alt="Macaroons">
+        </div>
+    </div>
+</section>
+
+<section class="advantages">
+    <div class="container advantages__container">
+        <div class="advantages__wrapper">
+            <div class="advantages__title">
+                Мы печём для вас вкуснейшие макаруны уже более 10 лет
+            </div>
+            <div class="advantages__burger">
+                <img src="images/advantages/burger.png" alt="Burger">
+            </div>
+            <div class="advantages__text">
+                Все пироженки мы готовим только из натуральных и качественных продуктов, без консервантов,
+                ароматизаторов, красителей. Используем в приготовлении сливочное масло 82,5%, без дрожжей, маргарина,
+                разрыхлителей и улучшителей муки.
+            </div>
+            <div class="advantages__item1 advantages__hover">
+                <div class="advantages__item-circle circle">
+                    <div class="advantages__item1-number number">1</div>
+                </div>
+                <div class="advantages__item1-title title">
+                    Лучшие продукты
+                </div>
+                <div class="advantages__item1-description text">
+                    Мы честно готовим макаруны только из натуральных и качественных продуктов. Мы не используем
+                    консерванты, ароматизаторы и красители.
+                </div>
+            </div>
+            <div class="advantages__item2 advantages__hover">
+                <div class="advantages__item-circle circle">
+                    <div class="advantages__item2-number number">2</div>
+                </div>
+                <div class="advantages__item2-title title">
+                    Много вкусов
+                </div>
+                <div class="advantages__item2-description text">
+                    Наша задача – предоставить вам широкое разнобразие вкусов. Вы удивитесь, но у нас более 70 вкусов
+                    пироженок.
+                </div>
+            </div>
+            <div class="advantages__item3 advantages__hover">
+                <div class="advantages__item-circle circle">
+                    <div class="advantages__item3-number number">3</div>
+                </div>
+                <div class="advantages__item3-title title">
+                    Бисквитное тесто
+                </div>
+                <div class="advantages__item3-description text">
+                    Все пирожные готовятся на бисквитном тесте с качественным сливочным маслом 82,5%. В составе нет
+                    маргарина и дрожжей!
+                </div>
+            </div>
+            <div class="advantages__item4 advantages__hover">
+                <div class="advantages__item-circle circle">
+                    <div class="advantages__item4-number number">4</div>
+                </div>
+                <div class="advantages__item4-title title">
+                    Честный продукт
+                </div>
+                <div class="advantages__item4-description text">
+                    Вкус, качество и безопасность наших пирогов подтверждена декларацией о соответствии, которую мы
+                    получили 22.06.2016 г.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="choice">
+    <div class="container choice__container">
+        <div class="choice__title">
+            Выберите свой макарун
+        </div>
+        <div class="choice__wrapper">
+            <div class="choice__item">
+                <div class="choice__item-macaroon">
+                    <img src="images/choice/img1.png" alt="Macaroon">
+                </div>
+                <div class="choice__item-title">
+                    Макарун с малиной
+                </div>
+                <div class="choice__item-info-action">
+                    <div class="choice__item-price">
+                        <p class="choice__item-text">1 шт.</p>
+                        <p>1,70 руб.</p>
+                    </div>
+                    <div class="choice__item-action">
+                        <button class="button choice__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="choice__item">
+                <div class="choice__item-macaroon macaroon-yellow">
+                    <img src="images/choice/img2.png" alt="Macaroon">
+                </div>
+                <div class="choice__item-title">
+                    Макарун с манго
+                </div>
+                <div class="choice__item-info-action">
+                    <div class="choice__item-price">
+                        <p class="choice__item-text">1 шт.</p>
+                        <p>1,70 руб.</p>
+                    </div>
+                    <div class="choice__item-action">
+                        <button class="button choice__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="choice__item">
+                <div class="choice__item-macaroon">
+                    <img src="images/choice/img3.png" alt="Macaroon">
+                </div>
+                <div class="choice__item-title">
+                    Пирог с ванилью
+                </div>
+                <div class="choice__item-info-action">
+                    <div class="choice__item-price">
+                        <p class="choice__item-text">1 шт.</p>
+                        <p>1,70 руб.</p>
+                    </div>
+                    <div class="choice__item-action">
+                        <button class="button choice__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="choice__item choice4">
+                <div class="choice__item-macaroon">
+                    <img src="images/choice/img4.png" alt="Macaroon">
+                </div>
+                <div class="choice__item-title">
+                    Пирог с фисташками
+                </div>
+                <div class="choice__item-info-action">
+                    <div class="choice__item-price">
+                        <p class="choice__item-text">1 шт.</p>
+                        <p>1,70 руб.</p>
+                    </div>
+                    <div class="choice__item-action">
+                        <button class="button choice__button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="order">
+    <div class="container order__container">
+        <div class="order__berry1">
+            <img src="images/order/berry1.png" alt="Strawberry">
+        </div>
+        <div class="order__berry2">
+            <img src="images/order/berry2.png" alt="Strawberry">
+        </div>
+        <div class="order__image">
+            <img src="images/order/macaron.png" alt="Macaron">
+        </div>
+        <div class="order__action">
+            <div class="order__title">Закажите макарун!</div>
+            <div class="order__describe">
+                Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего пекаря!
+            </div>
+            <form class="order__form">
+                <div class="order__form-item1">
+                    <p class="order__form-text">Ваш выбор</p>
+                    <label class="formInputLabel">
+                        <input id="formChoice" class="order__form-input order__form-input__input1"
+                               type="text"
+                               placeholder="Напишите, что хотите заказать...">
+                        <svg class="invalidFormIcon">
+                            <use xlink:href="#check"/>
+                        </svg>
+                    </label>
+                    <div class="order__form-input-invalidForm">Необходимо ввести макарун для заказа!</div>
+                </div>
+                <div class="order__form-item2">
+                    <p class="order__form-text">Заполните данные для заказа</p>
+                    <div class="order__form-text-wrapper">
+                        <div>
+                            <label class="formInputLabel">
+                                <input id="formCustomer" class="order__form-input order__form-input__input2" type="text"
+                                       placeholder="Ваше имя">
+                                <svg class="invalidFormIcon">
+                                    <use xlink:href="#check"/>
+                                </svg>
+                            </label>
+                            <div id="invalidFormFeedback2" class="order__form-input-invalidForm">Необходимо ввести Ваше имя!</div>
+                        </div>
+                        <div>
+                            <label class="formInputLabel">
+                                <input id="formPhone" class="order__form-input order__form-input__input3" type="tel"
+                                       placeholder="+375 (__)___-__-__">
+                                <svg class="invalidFormIcon">
+                                    <use xlink:href="#check"/>
+                                </svg>
+                            </label>
+                            <div class="order__form-input-invalidForm">Необходимо ввести Ваш номер телефона!</div>
+                        </div>
+                        <button id="formSubmit" type="button" class="button order__button">Оформить заказ</button>
+                    </div>
+                </div>
+            </form>
+            <div class="order__successPurchase">
+                <p>Спасибо за Ваш заказ.</p>
+                <p>Мы скоро свяжемся с Вами!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__logo-rights">
+            <div class="logo footer__logo">
+                <a href="#">
+                    <img src="images/header/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="footer__rights">
+                Все права защищены, 2020
+            </div>
+        </div>
+        <div class="footer__insta">
+            <a class="footer__insta-link" href="#">
+                <svg class="footer__insta-icon__svg" id="Bold" enable-background="new 0 0 24 24" height="512"
+                     viewBox="0 0 24 24" width="512"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z"/>
+                    <path d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z"/>
+                    <circle cx="18.406" cy="5.595" r="1.439"/>
+                </svg>
+                <p class="footer__insta-text">Мы в Instagram</p>
+            </a>
+        </div>
+        <div class="contact footer__contact">+375 (29) 368-98-68</div>
+    </div>
+</footer>
+
+<div class="present">
+    <div class="present__text-block">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="187px" height="67px">
+            <path fill-rule="evenodd" stroke="rgb(119, 10, 29)" stroke-width="2px" stroke-linecap="butt"
+                  stroke-linejoin="miter" fill="rgb(254, 239, 238)"
+                  d="M173.000,42.282 L173.000,55.000 C173.000,60.523 168.523,65.000 163.000,65.000 L11.000,65.000 C5.477,65.000 1.000,60.523 1.000,55.000 L1.000,11.000 C1.000,5.477 5.477,1.000 11.000,1.000 L163.000,1.000 C168.523,1.000 173.000,5.477 173.000,11.000 L173.000,22.520 L184.508,32.401 L173.000,42.282 Z"/>
+        </svg>
+        <div class="present__text">
+            <p>Оформите заказ</p>
+            <p>и получите подарок!</p>
+        </div>
+    </div>
+    <div class="present__image">
+        <div class="present__circle"></div>
+        <img class="present__icon" src="images/present/present.png" alt="Present">
+    </div>
+</div>
+
+<div class="loader">
+    <div class="loaderWrapper">
+        <div class="lds-heart"><div></div></div>
+    </div>
+</div>
+
+<script src="src/scripts/jQuery/jquery-3.6.3.min.js"></script>
+<script src="src/scripts/script.js"></script>
+<script>
+    document.getElementById('burger').onclick = function () {
+        document.getElementById('menu').classList.add('open');
+    }
+
+    document.querySelectorAll('#menu *').forEach((item) => {
+        item.onclick = () => {
+            document.getElementById('menu').classList.remove('open');
+        }
+    })
+</script>
+
+</body>
+</html>
